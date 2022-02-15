@@ -1,6 +1,6 @@
 {
   "name": "challenge04-datatypes",
-  "author": "Wellington S. Almeida (WellsSA)",
+  "author": "Thales Silva Morato (ThaSMorato)",
   "version": "1.0.0",
   "description": "This is the official repository of the 4th EW.IT code challenge. Which is a Producer/Consumer Application where you can manually view and recommend cryptos on the Producer side & plot charts and manage your recommendation wallet on the Consumer side.",
   "license": "MIT",
@@ -29,5 +29,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "^17.3.0"
   }
 }
