@@ -12,7 +12,10 @@
     "producer:dev": "nodemon --exec npm run producer",
     "consumer": "node --experimental-json-modules --experimental-top-level-await src/consumer-cli.js",
     "consumer:dev": "nodemon --exec npm run consumer",
-    "provider": "npx json-server --watch src/provider-server.json --port 3001"
+    "provider": "npx json-server --watch src/provider-server.json --port 3001",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules&& npx jest --runInBand --no-cache --config jest.config.mjs",
+    "test:cov": "set NODE_OPTIONS=--experimental-vm-modules&& npx jest --runInBand --no-cache --config jest.config.mjs --coverage",
+    "test:watch": "set NODE_OPTIONS=--experimental-vm-modules&& npx jest --runInBand --no-cache --config jest.config.mjs --watchAll"
   },
   "dependencies": {
     "asciichart": "^1.5.25",
@@ -22,6 +25,7 @@
     "dotenv": "^16.0.0",
     "draftlog": "^1.0.13",
     "express": "^4.17.2",
+    "jest": "^27.5.1",
     "readline": "^1.3.0",
     "socket.io": "^4.4.1",
     "socket.io-client": "^4.4.1",
